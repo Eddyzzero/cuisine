@@ -1,0 +1,107 @@
+
+/* Premier parrtie de span */
+section p {
+    background-color: #e0dfd5;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+    border-radius: 12px;
+    margin: 12px;
+    padding: 10px;
+}
+
+section p > span {
+    color: #f06543;
+    background-color: transparent;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+/* deuxième partie de span */
+.description {
+    display: flex;
+    margin: 20px; 
+    align-items: center;
+}
+
+.description h1 {
+    font-size: 2em;
+    color: #e8e9eb;
+}
+
+.description  h1 > span {
+    font-size: 2em;
+    color: #f06543;
+    background-color: none;
+}
+
+.description p {
+    font-size: 1em;
+    padding: 20px;
+    margin: 20px;
+}
+
+/*partie section recettes */
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 10px;
+}
+
+.card-container-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.card-article {
+    display: flex;
+    flex-direction: column;
+    background-color: #f06543;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.card-image {
+    display: block;
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card-data {
+    background-color: #e0dfd5;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 10px 9px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 9px 0px 0px rgba(0,0,0,1);
+    box-shadow: 10px 9px 0px 0px rgba(0,0,0,1);
+}
+
+.card-description {
+    background-color: #e0dfd5;
+    font-weight: 300;
+}
+
+.card-title {
+    background-color: #e0dfd5;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.card-button {
+    background-color: #648767;
+    text-decoration: none;
+    padding: 3px 12px;
+    border-radius: 10px;
+    color: #e0dfd5;
+}

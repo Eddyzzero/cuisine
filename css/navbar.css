@@ -1,0 +1,46 @@
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 12px;
+} 
+
+/* styliser les boutons */
+.nav-container li a {
+    color: #e0dfd5;
+    border-radius: 5px;
+    background-color: #f06543;
+    padding: 2px 10px;
+}
+
+.nav-container li a:hover {
+    color: #e0dfd5;
+    background-color: #0f1a20;
+    transition: background-color 0.5s ease
+}
+
+.recettes-list-container {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+/* nav bar hidden */
+
+ul li ul.recettes-list-container {
+    display: none;
+    position: absolute;
+}
+
+ul li:hover ul.recettes-list-container {
+    display: block;
+}
+
+ul li ul.recettes-list-container li {
+    background-color: transparent;
+}
+
+ul li:hover ul.recettes-list-container li {
+    margin: 20px;
+}
+
+

@@ -1,0 +1,46 @@
+footer{
+    background-color: #f06543;
+    display: flex;
+    gap: 3em;
+    padding: 80px;
+    margin: 12px;
+}
+
+.container-footer-logo{
+    background-color: #f06543;
+}
+
+.container-footer-logo p {
+    font-size: 2em;
+    color: #e0dfd5;
+    font-weight: 700;
+    background-color: #f06543;
+}
+
+.container-footer-copyright {
+    background-color: #f06543;
+}
+
+.container-footer-copyright p {
+    background-color: #f06543;
+    color: #e0dfd5;
+
+}
+
+.section-footer-images{
+    background-color: #f06543;
+    display: flex;
+}
+
+footer section {
+    display: flex;
+    gap: 10px;
+}
+
+footer section img {
+    width: 30px;
+    margin: 10px;
+    background-color: #f06543;
+    object-fit: contain;
+}
+
