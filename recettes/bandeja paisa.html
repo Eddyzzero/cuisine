@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/recipes-style.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title>El Colombiano</title>
   </head>
   <body>
@@ -12,11 +17,11 @@
     </header>
 
     <nav>
-      <ul>
+      <ul class="nav-container">
         <li><a href="/index.html">Acceuil</a></li>
-        <li>
+        <li class="recette-container">
           <a href="">recettes</a>
-          <ul>
+          <ul class="recettes-list-container">
             <li><a href="/recettes/bandeja paisa.html">Bandeja paisa</a></li>
             <li><a href="/recettes/empanadas.html">Empanadas</a></li>
             <li><a href="/recettes/sancocho.html">Sancocho</a></li>
@@ -27,13 +32,15 @@
       </ul>
     </nav>
 
-    <p>Comment faire une bandeja paisa</p>
+    <section class="titre-debout">
+      <p>Comment faire des empanadas</p>
+    </section>
 
-    <section>
-      <div>
-        <div>
-          <h2>Bandeja paisa</h2>
-          <p><b>Ingredients</b></p>
+    <section class="principal-container">
+      <h2>Bandeja paisa</h2>
+      <div class="container-cards">
+        <div class="container-ingredients">
+          <p>Ingredients</p>
           <ul>
             <li>boîte 4/4 de haricots rouges</li>
             <li>1 boîte 1/2 de tomates concassées</li>
@@ -45,16 +52,15 @@
             <li>4 oeufs</li>
             <li>du riz</li>
             <li>
-              et des épices : Ail, Origan, cumin en poudre, paprika, sel,
+              Les épices : Ail, Origan, cumin en poudre, paprika, sel,
               poivre, un bouquet de coriandre et un peu de persil Emincer les
               oignons et les faire revenir, ajouter une gousse d’ail.
             </li>
           </ul>
         </div>
-      </div>
       <div>
-        <div>
-          <h2>Preparation</h2>
+        <div class="Container-preparation">
+          <p>Preparation</p>
           <ol>
             <li>
               Ajouter la boite de tomates concassées, salez poivrez, ajouter une
@@ -84,100 +90,119 @@
               haricots rouges, riz, viande hachée, 1/4 d’avocat et les tomates
               et complétez par un oeuf au plat.
             </li>
-            <p><b>Bon appetit</b></p>
+            <p>Bon appetit</p>
           </ol>
         </div>
       </div>
-      <div>
-        <div
-          <h2>Valeur nutritionelle</h2>
-          <table>
-            <tr>
-              <th colspan="2">valueur nutritionelle</th>
-              <th>Pour 100g</th>
-            </tr>
-            <tr>
-              <td>Energie</td>
-              <td></td>
-              <td>423kl</td>
-              <td>(231kcal)</td>
-            </tr>
-            <tr>
-              <td>Matiére grasses</td>
-              <td></td>
-              <td>12g</td>
-            </tr>
-            <tr>
-              <td>dont acides gras saturés</td>
-              <td></td>
-              <td>8g</td>
-            </tr>
-            <tr>
-              <td>Glucides</td>
-              <td></td>
-              <td>20g</td>
-            </tr>
-            <tr>
-              <td>dont sucre</td>
-              <td></td>
-              <td>5,6g</td>
-            </tr>
-            <tr>
-              <td>Fibres alimentaires</td>
-              <td></td>
-              <td>23g</td>
-            </tr>
-            <tr>
-              <td>Protéines</td>
-              <td></td>
-              <td>3g</td>
-            </tr>
-            <tr>
-              <td>Sel</td>
-              <td></td>
-              <td>1,7g</td>
-            </tr>
-          </table>
-        </div>
       </div>
-    </section>
-    <section>
-      <h2>Laissez nous un commentaire</h2>
-      <form>
-        <div>
-          <label for="fname">Prénom :</label><br />
-          <input type="text" id="fname" name="fname" />
-        </div>
-        <div>
-          <label for="lname">Nom :</label><br />
-          <input type="text" id="lname" name="lname" />
-        </div>
-        <div>
-          <label for="utitle">Titre/sujet :</label><br />
-          <input type="text" id="utitle" name="utitle" /><br />
-        </div>
-        <div>
-          <label for="unote">Votre note :</label>
-          <select name="Unote" id="Unote">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div>
-          <label for="message">Votre message :</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-          <button type="submit">Envoyer</button>
-          <button type="reset">Reinitialiser</button>
-        </div>
-      </form>
-    </section>
 
-    <a href="./../index.html">Revenir à l'acceuil</a>
+      <div class="container-valeur-commentaire"">
+        <div class="Valeur-nutri">
+            <h2>Valeur nutritionelle</h2>
+            <table>
+              <tr>
+                <th colspan="2">valueur nutritionelle</th>
+                <th>Pour 100g</th>
+              </tr>
+              <tr>
+                <td>Energie</td>
+                <td></td>
+                <td>423kl</td>
+                <td>(231kcal)</td>
+              </tr>
+              <tr>
+                <td>Matiére grasses</td>
+                <td></td>
+                <td>12g</td>
+              </tr>
+              <tr>
+                <td>dont acides gras saturés</td>
+                <td></td>
+                <td>8g</td>
+              </tr>
+              <tr>
+                <td>Glucides</td>
+                <td></td>
+                <td>20g</td>
+              </tr>
+              <tr>
+                <td>dont sucre</td>
+                <td></td>
+                <td>5,6g</td>
+              </tr>
+              <tr>
+                <td>Fibres alimentaires</td>
+                <td></td>
+                <td>23g</td>
+              </tr>
+              <tr>
+                <td>Protéines</td>
+                <td></td>
+                <td>3g</td>
+              </tr>
+              <tr>
+                <td>Sel</td>
+                <td></td>
+                <td>1,7g</td>
+              </tr>
+            </table>
+        </div>
+
+        <div class="laisser-commentaire">
+          <h2>Laissez nous un commentaire</h2>
+          <form>
+            <div>
+              <label for="fname">Prénom :</label><br />
+              <input type="text" id="fname" name="fname" />
+            </div>
+            <div>
+              <label for="lname">Nom :</label><br />
+              <input type="text" id="lname" name="lname" />
+            </div>
+            <div>
+              <label for="utitle">Titre/sujet :</label><br />
+              <input type="text" id="utitle" name="utitle" /><br />
+            </div>
+            <div>
+              <label for="unote">Votre note :</label>
+              <select name="Unote" id="Unote">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="Votre-message">
+              <label for="message">Votre message :</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="card-button">Envoyer</button>
+              <button type="reset" class="card-button">Reinitialiser</button>
+            </div>
+          </form>
+        </div>
+        </div>
+      </section>
+  
+    <footer>
+      <article class="container-footer-logo">
+        <p>El colombiano</p>
+      </article>
+  
+      <article  class="container-footer-copyright">
+        <p>©</p>
+        <p>Copyright by Jhon florez</p>
+      </article>
+  
+      <section class="section-footer-images">
+        <img src="/img/Logos social media/facebook.png" alt="facebook">
+        <img src="/img/Logos social media/instagram.png" alt="facebook">
+        <img src="/img/Logos social media/linkedin.png" alt="facebook">
+        <img src="/img/Logos social media/tic-tac.png" alt="facebook">
+      </section>
+    </footer>
   </body>
 </html>

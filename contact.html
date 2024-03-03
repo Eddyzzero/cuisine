@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="stylesheet" href="/css/recipes-style.css">
+
     <title>El Colombiano</title>
   </head>
   <body>
     <nav>
-      <ul>
+      <ul class="nav-container">
         <li><a href="/index.html">Acceuil</a></li>
-        <li>
+        <li class="recette-container">
           <a href="">recettes</a>
-          <ul>
+          <ul class="recettes-list-container">
             <li><a href="/recettes/bandeja paisa.html">Bandeja paisa</a></li>
             <li><a href="/recettes/empanadas.html">Empanadas</a></li>
             <li><a href="/recettes/sancocho.html">Sancocho</a></li>
@@ -23,17 +30,11 @@
       </ul>
     </nav>
 
-    <img
-      src="./img/ragout-chaud-aubergine-epicee-poivron-tomate-courgette-champignons.jpg"
-      alt="image cuisine"
-      width="800px" />
+    <header> 
+      <p>Nous Contacter</p>
+    </header>
 
-    <head>
-      Nous Contacter
-      <b>Señor si</b>
-    </head>
-
-    <form>
+    <form class="contact-container">
       <div>
         <label for="flname">Nom et Prénom :</label><br />
         <input type="text" id="flname" name="flname" />
@@ -57,11 +58,27 @@
         >
       </div>
       <div>
-        <button class="buttonsend" type="submit">Envoyer</button>
-        <button class="buttonReset" type="reset">Reinitialiser</button>
+        <button class="card-button" type="submit">Envoyer</button>
+        <button class="card-button" type="reset">Reinitialiser</button>
       </div>
     </form>
 
-    <a href="./index.html">Revenir à l'acceuil</a>
+    <footer>
+      <article class="container-footer-logo">
+        <p>El colombiano</p>
+      </article>
+  
+      <article  class="container-footer-copyright">
+        <p>©</p>
+        <p>Copyright by Jhon florez</p>
+      </article>
+  
+      <section class="section-footer-images">
+        <img src="./img/Logos social media/facebook.png" alt="facebook">
+        <img src="./img/Logos social media/instagram.png" alt="facebook">
+        <img src="./img/Logos social media/linkedin.png" alt="facebook">
+        <img src="./img/Logos social media/tic-tac.png" alt="facebook">
+      </section>
+    </footer>
   </body>
 </html>

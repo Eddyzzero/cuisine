@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/recipes-style.css">
     <title>El Colombiano</title>
 </head>
 <body>
@@ -11,11 +16,11 @@
         <p>El Colombiano</p>
     </header>
     <nav>
-        <ul>
-         <li><a href="/index.html">Acceuil</a></li>
-          <li>
+        <ul class="nav-container">
+          <li><a href="/index.html">Acceuil</a></li>
+          <li class="recette-container">
             <a href="">recettes</a>
-            <ul>
+            <ul class="recettes-list-container">
               <li><a href="/recettes/bandeja paisa.html">Bandeja paisa</a></li>
               <li><a href="/recettes/empanadas.html">Empanadas</a></li>
               <li><a href="/recettes/sancocho.html">Sancocho</a></li>
@@ -25,146 +30,166 @@
           <li><a href="/contact.html">contact</a></li>
         </ul>
       </nav>
-    <img src="../Img/sancocho.jpeg" alt="Sancocho" width="800">
+    <section class="titre-debout">
+        <p>Sancocho</p>
+    </section>
 
-    <div>
-        <h2>Sancocho</h2>
-
-        <p><b>Ingredients</b></p>
-    
-        <ul>
-            <li>Riz Basmati, 500 g</li>
-            <li>Basses côtes, 2kg</li>
-            <li>Gîtes, 1kg</li>
-            <li>Tomates fraîches, 1kg</li>
-            <li>Oignons, 1kg</li>
-            <li>3 citrons vert</li>
-            <li>2 bananes plantains vertes</li>
-            <li>1 manioc</li>
-            <li>4 pommes de terre moyennes</li>
-            <li>1 boîte de mais</li>
-            <li>Ciboulette</li>
-            <li>Coriandre</li>
-            <li>1 bouillon en cube</li>
-            <li>Sel</li>
-            <li>Poivre</li>
-            <li>Huile d’olive</li>
-        </ul>
-    </div>  
-
-    <div>
-    <h2>Preparation</h2>
-
-        <ol>
-            <li>Rincer les viandes et les couper en morceaux.</li>
-            <li>Faire cuire les viandes avec 1 bouillon en cube, ajouter du sel aillé (facultatif) et laisser cuire au moins 2 heures</li>
-            <li>Hacher la ciboulette et la coriandre</li>
-            <li>Couper en petits dés les tomates et les oignons</li>
-            <li>Couper le manioc, les bananes plantains et les pommes de terre en morceaux</li>
-            <li>Partager en 2 la préparation oignons / tomates</li>
-            <li>
-                Mettre la première moitié dans un récipient, arroser la préparation avec le jus des 3 citrons verts et mélanger.
-                Ajouter la moitié de la ciboulette et de la coriandre puis assaisonner (sel, poivre et huile d’olive) et mélanger.
-                Mettre le récipient au réfrigérateur
-            </li>
-            <li>
-                Mettre la deuxième moitié dans une poêle, ajouter le reste de la coriandre et ciboulette et faire revenir à feu doux.
-                Lorsque la viande est presque cuite, ajouter dans le bouillon les pommes de terre, le manioc et les bananes plantains coupés.
-                Ajouter le mélange oignons et tomates que vous avez fait revenir, disposer le maïs et continuer la cuisson
-            </li>
-            <li>Faire cuite le Riz Basmati</li>
-            <li>Dans l’assiette, mettre le riz, ajouter le bouillon et placer au-dessus le premier mélange oignons / tomates (froid)</li>
-        </ol>
-    </div>
-
-    <div> <h2>Valeur nutritionelle</h2>
-        <table>
-            <tr>
-                <th colspan="2">valueur nutritionelle</th>
-                <th>Pour 100g</th>
-            </tr>
-            <tr>
-                <td>Energie</td>
-                <td></td>
-                <td>700kl</td>
-                <td>(244kcal)</td>
-            </tr>
-            <tr>
-                <td>Matiére grasses</td>
-                <td></td>
-                <td>12,8g</td>
-            </tr>
-            <tr>
-                <td>dont acides gras saturés</td>
-                <td></td>
-                <td>11,9g</td>
-            </tr>
-            <tr>
-                <td>Glucides</td>
-                <td></td>
-                <td>29g</td>
-            </tr>
-            <tr>
-                <td>dont sucre</td>
-                <td></td>
-                <td>12g</td>
-            </tr>
-            <tr>
-                <td>Fibres alimentaires</td>
-                <td></td>
-                <td>2g</td>
-            </tr>
-            <tr>
-                <td>Protéines</td>
-                <td></td>
-                <td>10g</td>
-            </tr>
-            <tr>
-                <td>Sel</td>
-                <td></td>
-                <td>8,5g</td>
-            </tr>
-            
-        </table>
-        
-        <h2>Laissez nous un commentaire</h2>
-        <section>
-            <form>
-                <div>
-                    <label for="fname">Prénom :</label><br>
-                    <input type="text" id="fname" name="fname">
-                </div>
-                <div>
-                    <label for="lname">Nom :</label><br>
-                    <input type="text" id="lname" name="lname">
-                </div>
-                <div>
-                    <label for="utitle">Titre/sujet :</label><br>
-                    <input type="text" id="utitle" name="utitle"><br>
-                </div>
-                <div>
-                     <label for="Unote">Votre note :</label>
-                        <select name="Unote" id="Unote">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                </div>
-                <div>
-                    <label for="message">Votre message :</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <div class="button">
-                    <button class="buttonsend" type="submit">Envoyer</button>
-                    <button class="buttonReset" type="reset">Reinitialiser</button>
-                </div> 
-            </form>
+    <section class="principal-container">
+        <h2>Le meilleur sancocho colombien</h2>
+        <div class="container-cards">
+            <div class="container-ingredients">
+                <p>Ingredients</p>
+                <ul>
+                    <li>Riz Basmati, 500 g</li>
+                    <li>Basses côtes, 2kg</li>
+                    <li>Gîtes, 1kg</li>
+                    <li>Tomates fraîches, 1kg</li>
+                    <li>Oignons, 1kg</li>
+                    <li>3 citrons vert</li>
+                    <li>2 bananes plantains vertes</li>
+                    <li>1 manioc</li>
+                    <li>4 pommes de terre moyennes</li>
+                    <li>1 boîte de mais</li>
+                    <li>Ciboulette</li>
+                    <li>Coriandre</li>
+                    <li>1 bouillon en cube</li>
+                    <li>Sel</li>
+                    <li>Poivre</li>
+                    <li>Huile d’olive</li>
+                </ul>
+            </div>  
+            <div  class="Container-preparation">
+            <p>Preparation</p>
+                <ol>
+                    <li>Rincer les viandes et les couper en morceaux.</li>
+                    <li>Faire cuire les viandes avec 1 bouillon en cube, ajouter du sel aillé (facultatif) et laisser cuire au moins 2 heures</li>
+                    <li>Hacher la ciboulette et la coriandre</li>
+                    <li>Couper en petits dés les tomates et les oignons</li>
+                    <li>Couper le manioc, les bananes plantains et les pommes de terre en morceaux</li>
+                    <li>Partager en 2 la préparation oignons / tomates</li>
+                    <li>
+                        Mettre la première moitié dans un récipient, arroser la préparation avec le jus des 3 citrons verts et mélanger.
+                        Ajouter la moitié de la ciboulette et de la coriandre puis assaisonner (sel, poivre et huile d’olive) et mélanger.
+                        Mettre le récipient au réfrigérateur
+                    </li>
+                    <li>
+                        Mettre la deuxième moitié dans une poêle, ajouter le reste de la coriandre et ciboulette et faire revenir à feu doux.
+                        Lorsque la viande est presque cuite, ajouter dans le bouillon les pommes de terre, le manioc et les bananes plantains coupés.
+                        Ajouter le mélange oignons et tomates que vous avez fait revenir, disposer le maïs et continuer la cuisson
+                    </li>
+                    <li>Faire cuite le Riz Basmati</li>
+                    <li>Dans l’assiette, mettre le riz, ajouter le bouillon et placer au-dessus le premier mélange oignons / tomates (froid)</li>
+                </ol>
+            </div>
+        </div>
+        <div class="container-valeur-commentaire">
+            <div class="Valeur-nutri"> 
+                <h2>Valeur nutritionelle</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">valueur nutritionelle</th>
+                        <th>Pour 100g</th>
+                    </tr>
+                    <tr>
+                        <td>Energie</td>
+                        <td></td>
+                        <td>700kl</td>
+                        <td>(244kcal)</td>
+                    </tr>
+                    <tr>
+                        <td>Matiére grasses</td>
+                        <td></td>
+                        <td>12,8g</td>
+                    </tr>
+                    <tr>
+                        <td>dont acides gras saturés</td>
+                        <td></td>
+                        <td>11,9g</td>
+                    </tr>
+                    <tr>
+                        <td>Glucides</td>
+                        <td></td>
+                        <td>29g</td>
+                    </tr>
+                    <tr>
+                        <td>dont sucre</td>
+                        <td></td>
+                        <td>12g</td>
+                    </tr>
+                    <tr>
+                        <td>Fibres alimentaires</td>
+                        <td></td>
+                        <td>2g</td>
+                    </tr>
+                    <tr>
+                        <td>Protéines</td>
+                        <td></td>
+                        <td>10g</td>
+                    </tr>
+                    <tr>
+                        <td>Sel</td>
+                        <td></td>
+                        <td>8,5g</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="laisser-commentaire">
+                <h2>Laissez nous un commentaire</h2>
+                  <form>
+                    <div>
+                      <label for="fname">Prénom :</label><br />
+                      <input type="text" id="fname" name="fname" placeholder="Votre prénom"/>
+                    </div>
+                    <div>
+                      <label for="lname">Nom :</label><br />
+                      <input type="text" id="lname" name="lname" placeholder="Votre nom" />
+                    </div>
+                    <div>
+                      <label for="utitle">Titre/sujet :</label><br />
+                      <input type="text" id="utitle" name="utitle" placeholder="titre/sujet"/><br />
+                    </div>
+                    <div>
+                      <label for="Unote">Votre note :</label>
+                      <select name="Unote" id="Unote">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                    <div class="Votre-message">
+                      <label>Votre message :</label>
+                      <textarea name="message"id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                      <button type="submit" class="card-button">Envoyer</button>
+                      <button type="reset" class="card-button">Reinitialiser</button>
+                    </div>
+                  </form>
+              </div>
+        </div>
         </section>
-    
-        <a href="./../index.html">Revenir à l'acceuil</a>
+
+        <footer>
+            <article class="container-footer-logo">
+              <p>El colombiano</p>
+            </article>
+        
+            <article  class="container-footer-copyright">
+              <p>©</p>
+              <p>Copyright by Jhon florez</p>
+            </article>
+        
+            <section class="section-footer-images">
+              <img src="/img/Logos social media/facebook.png" alt="facebook">
+              <img src="/img/Logos social media/instagram.png" alt="facebook">
+              <img src="/img/Logos social media/linkedin.png" alt="facebook">
+              <img src="/img/Logos social media/tic-tac.png" alt="facebook">
+            </section>
+          </footer>
 
 </body>
 </html>

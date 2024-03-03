@@ -1,0 +1,22 @@
+body, html {
+    background-image: url(/img/ragout-chaud-aubergine-epicee-poivron-tomate-courgette-champignons.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px;
+    padding: 30px;
+    background-color: #0f0e17;
+    border-radius: 12px;
+    opacity: 0.95;
+}
+
+.contact-container label {
+    color: #e0dfd5;
+    margin: 5px 0;
+}

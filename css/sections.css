@@ -1,6 +1,6 @@
 
-/* Premier parrtie de span */
-section p {
+/* Premier partie de span */
+section > p {
     background-color: #e0dfd5;
     text-align: center;
     font-size: 1.5em;
@@ -10,8 +10,8 @@ section p {
     padding: 10px;
 }
 
-section p > span {
-    color: #f06543;
+section > p > span {
+    color: #ff8906;
     background-color: transparent;
     text-align: center;
     font-size: 2em;
@@ -25,18 +25,18 @@ section p > span {
     align-items: center;
 }
 
-.description h1 {
+.description > h1 {
     font-size: 2em;
-    color: #e8e9eb;
+    color: #e0dfd5;
 }
 
-.description  h1 > span {
+.description > h1 > span {
     font-size: 2em;
-    color: #f06543;
+    color: #ff8906;
     background-color: none;
 }
 
-.description p {
+.description > p {
     font-size: 1em;
     padding: 20px;
     margin: 20px;
@@ -63,7 +63,7 @@ section p > span {
 .card-article {
     display: flex;
     flex-direction: column;
-    background-color: #f06543;
+    background-color: #ff8906;
     padding: 30px 20px;
     border-radius: 20px;
 }
@@ -103,5 +103,19 @@ section p > span {
     text-decoration: none;
     padding: 3px 12px;
     border-radius: 10px;
+    color: #e0dfd5;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/*s****************** hovers******************/
+
+/* Buttons */
+.card-button:hover {
+    -webkit-box-shadow: 5px 9px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 9px 0px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    transition: 0.5s;
+    background-color:#c16803;
     color: #e0dfd5;
 }

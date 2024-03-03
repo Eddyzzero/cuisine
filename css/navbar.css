@@ -2,14 +2,19 @@
     display: flex;
     justify-content: space-evenly;
     margin: 12px;
+background-color: transparent;
 } 
 
 /* styliser les boutons */
 .nav-container li a {
     color: #e0dfd5;
     border-radius: 5px;
-    background-color: #f06543;
+    background-color: #ff8906;
     padding: 2px 10px;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    z-index: 9999;;
 }
 
 .nav-container li a:hover {

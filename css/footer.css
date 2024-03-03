@@ -1,36 +1,33 @@
 footer{
-    background-color: #f06543;
+    align-items: center;
+    border-top: 2px solid #e0dfd5;
     display: flex;
+    justify-content: space-between;
     gap: 3em;
-    padding: 80px;
+    padding: 40px;
     margin: 12px;
-}
-
-.container-footer-logo{
-    background-color: #f06543;
 }
 
 .container-footer-logo p {
     font-size: 2em;
     color: #e0dfd5;
     font-weight: 700;
-    background-color: #f06543;
 }
 
 .container-footer-copyright {
-    background-color: #f06543;
+    display: flex;
+    gap: 4px;
 }
 
 .container-footer-copyright p {
-    background-color: #f06543;
     color: #e0dfd5;
-
 }
 
-.section-footer-images{
-    background-color: #f06543;
-    display: flex;
+.section-footer-images {
+    padding: 12px;
+    border-radius: 10px;
 }
+
 
 footer section {
     display: flex;
@@ -40,7 +37,7 @@ footer section {
 footer section img {
     width: 30px;
     margin: 10px;
-    background-color: #f06543;
     object-fit: contain;
 }
 
+/* hover */
