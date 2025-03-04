@@ -3,7 +3,7 @@
     text-align: justify;
 }
 
-.principal-container > h2 {
+.principal-container>h2 {
     margin: 60px;
     color: #e0dfd5;
     text-align: center;
@@ -12,7 +12,7 @@
 
 
 
-.titre-debout{
+.titre-debout {
     display: flex;
     background-image: url(/img/arepas.jpg);
 
@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.titre-debout p{
+.titre-debout p {
     font-size: 2em;
     margin: 12px;
     color: #e0dfd5;
@@ -35,20 +35,22 @@
 
 .container-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 40px;
-    gap: 30px;
+    gap: 10px;
 }
 
 .container-ingredients {
-    width: 50%;
+    width: 100%;
+    max-width: 30rem;
 }
 
 .container-ingredients,
 .container-ingredients p,
-.container-ingredients ul, 
+.container-ingredients ul,
 .container-ingredients li,
-.Container-preparation, 
+.Container-preparation,
 .Container-preparation p,
 .Container-preparation ol,
 .Container-preparation li,
@@ -56,15 +58,15 @@
     background-color: #de8c2f;
     margin: 10px;
     padding: 5px;
-    
+
     border-radius: 10px;
 
 }
 
 .container-ingredients p,
-.Container-preparation > p,
-.Valeur-nutri > h2, 
-.laisser-commentaire > h2 {
+.Container-preparation>p,
+.Valeur-nutri>h2,
+.laisser-commentaire>h2 {
     text-align: center;
     border: 2px solid black;
     background-color: #e0dfd5;
@@ -77,19 +79,19 @@
 }
 
 
-.container-ingredients > p {
+.container-ingredients>p {
     font-size: 1.5em;
     font-weight: 700;
 }
 
-.Container-preparation > p {
+.Container-preparation>p {
     font-size: 1.5em;
     font-weight: 700;
 }
 
 
 .Valeur-nutri,
-.Valeur-nutri *{
+.Valeur-nutri * {
     background-color: #de8c2f;
     border-radius: 10px;
     margin: 10px;
@@ -118,8 +120,8 @@
 #lname,
 #utitle,
 #Unote,
-#message{
-    background-color:#e0dfd5;
+#message {
+    background-color: #e0dfd5;
     border-radius: 5px;
     border: 2px solid black;
     margin: 5px;
@@ -130,7 +132,7 @@
     width: 400px;
 }
 
-.laisser-commentaire > label {
+.laisser-commentaire>label {
     color: #de8c2f;
 }
 
@@ -149,4 +151,3 @@
     padding: 2px 15px;
     color: black;
 }
-
